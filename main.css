@@ -152,6 +152,7 @@ body {
 
     /*Comienzo de código */
 
-    
 
-
+    .hero__title{
+      color: red;
+    }
