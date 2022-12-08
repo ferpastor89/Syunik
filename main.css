@@ -151,14 +151,13 @@ body {
 }
 
     /*Comienzo de código */
+body{
 
+}
 .card-bar__content__steps{
   font-size: 2rem;
 }
-.numbers{
-  font-size: 1rem;
-  padding-top: 0;
-}
+
 .logo{
     width: 10%;
 }
