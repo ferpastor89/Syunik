@@ -152,7 +152,10 @@ body {
 
     /*Comienzo de código */
 
+.logo{
+    width: 10%;
+}
 
-    .hero__title{
-      color: red;
-    }
+.iphone14{
+  width: 60%;
+}
