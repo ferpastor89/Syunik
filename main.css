@@ -152,10 +152,35 @@ body {
 
     /*Comienzo de código */
 
+.card-bar__content__steps{
+  font-size: 2rem;
+}
+.numbers{
+  font-size: 1rem;
+  padding-top: 0;
+}
 .logo{
     width: 10%;
 }
 
 .iphone14{
   width: 60%;
+}
+
+.courses-cards span{
+  font-weight: bold;
+}
+
+.cripto-cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: content;
+  
+}
+.cripto-cards img{
+  width: 100%;
 }
