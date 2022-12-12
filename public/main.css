@@ -12,18 +12,7 @@
     --negro: #ececec;
   }
 }
-/* Opcional */
-/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* Opcional */
-/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    -webkit-animation: none !important;
-            animation: none !important;
-    -webkit-transition: none !important;
-    transition: none !important;
-  }
-}
+
 /* Reseteamos los margin y paddings de todas las etiquetas */
 * {
   margin: 0;
@@ -150,9 +139,7 @@ body {
 }
 
     /*Comienzo de código */
-body{
 
-}
 .card-bar__content__steps{
   font-size: 2rem;
 }
@@ -181,4 +168,32 @@ body{
 }
 .cripto-cards img{
   width: 100%;
+}
+
+@font-face{
+  font-family: 'headingNowHero';
+  src: url(/assets/headingNowFonts/HeadingNowTrial-18Heavy.ttf)format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montseBar';
+  src: url(/assets/montserratFonts/Montserrat-Light.otf)format('opentype');
+}
+
+.hero__title{
+  font-family:'headingNowHero';
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.card-bar__content__steps h2{
+  font-family:'montseBar';
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.testimony img{
+  max-width: 25%;
+  width: 25%;
 }
