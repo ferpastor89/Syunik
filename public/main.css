@@ -140,16 +140,122 @@ body {
 
     /*Comienzo de código */
 
-.card-bar__content__steps{
-  font-size: 2rem;
+    :root{
+      --gradiente:linear-gradient(
+        80deg ,
+        orange,
+        orange,
+        #ce41a3,
+        #4751db,
+        #4751db
+        );
+    }
+
+    @font-face{
+      font-family:"headingNowTitular";
+      src: url(./assets/headingNowFonts/HeadingNowTrial-25Medium.ttf)format('truetype');
+    }
+    @font-face {
+      font-family: "MontserratMedium";
+      src: url(./assets/montserratFonts/Montserrat-Medium.otf)format('opentype');
+    }
+    @font-face {
+      font-family: "Montserratbold";
+      src: url(./assets/montserratFonts/Montserrat-Bold.otf)format('opentype');;
+    }
+    
+
+    body{
+      min-height: 100vh;
+      background-image: var(--gradiente);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /*HEADER*/
+
+    .header{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+  .logo{
+    margin-left: .5rem;
+    flex-basis: 6rem;
+  }
+
+  .menu{
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 1rem;
+    max-width:60%;
+    margin: auto;
+  }
+
+  .menu__desktop{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 1rem;
+  }
+  
+  .menu__desktop-items{
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    font-size: .7rem;
+    font-family: "MontserratMedium";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #242323;
+  }
+
+  .hero{
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero__title{
+  font-family:"headingNowTitular";
+  text-transform: uppercase;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
-.logo{
-    width: 10%;
+.card-bar__content__steps h2{
+  font-family:"MontserratBold";
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 100;
 }
 
 .iphone14{
   width: 60%;
+}
+
+.card-bar__content__steps{
+  font-size: 2rem;
 }
 
 .courses-cards span{
@@ -170,30 +276,33 @@ body {
   width: 100%;
 }
 
-@font-face{
-  font-family: 'headingNowHero';
-  src: url(/assets/headingNowFonts/HeadingNowTrial-18Heavy.ttf)format('truetype');
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montseBar';
-  src: url(/assets/montserratFonts/Montserrat-Light.otf)format('opentype');
-}
-
-.hero__title{
-  font-family:'headingNowHero';
-  text-transform: uppercase;
-  font-size: 4rem;
-  line-height: 4rem;
-}
-
-.card-bar__content__steps h2{
-  font-family:'montseBar';
-  font-size: 2rem;
-  line-height: 2rem;
-}
-
 .testimony img{
   max-width: 25%;
   width: 25%;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:767px){
+  .menu{
+    max-width: 40%;
+    min-height: 5vh;
+  }
+
+  .menu__desktop{
+    align-items: center;
+  }
+  .menu__desktop-items{
+    font-size: .8rem;
+    
+  }
+
+
+}
+  
