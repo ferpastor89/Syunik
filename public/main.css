@@ -187,6 +187,19 @@ body {
       }
     }
 
+    .montserrat{
+      font-family:  "MontserratMedium";
+      font-size: 1rem; 
+    }
+
+    .style{
+      max-width: max-content;
+      border-radius: 1em;
+      padding: .5rem;
+      background-color: antiquewhite;
+      backdrop-filter:blur(.2rem);
+      border: 1px solid rgba(39, 36, 36, 0.5);
+    }
 
     /**COMIENZO DE CODIGO**/
 
@@ -201,12 +214,13 @@ body {
       animation: bg-animation 40s infinite alternate;
     }
 
-    /*HEADER*/
+    /*** HEADER ***/
 
   .header{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     /*align-items: center;*/
     margin-top: 1rem;
@@ -219,18 +233,17 @@ body {
     
   }
 
-
   .menu{
     border: 1.5px solid black;
     border-radius: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-grow: 1;
     flex-basis: 1rem;
     max-width:50%;
-    margin-left: 5%;
+    margin-right: 6%;
   }
 
   .menu__desktop{
@@ -251,6 +264,8 @@ body {
     text-transform: uppercase;
     color: #242323;
   }
+
+  /*** HERO ***/
 
   .hero{
     display: grid;
@@ -276,34 +291,64 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
-    align-items:;
+    margin-left: 1rem;
+    margin-right: 1rem
   }
 
   .info-cards p{
     font-size: .7rem;
-    line-height: .7rem;
+    line-height: .8rem;
   }
 
   .info-cards span{
     font-weight: bold;
   }
 
-  .hero__info-cards-señales{
-    border: 1px solid black;
-    border-radius: 1em;
-    padding: .5rem;
-    margin-right: 1rem;
-    background-color: antiquewhite;
+  .social-networks{
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
   }
 
-  .hero__info-cards-forex{
-    border: 1px solid black;
-    padding: .5rem;
+  .follow-us{
+    min-width: 4vw;
+    display: block;
     margin-left: 1rem;
-    border-radius: 1em;
-    background-color: antiquewhite;
+    margin-top: .5rem;
+  }
+  .follow-us__title{
+    font-size: .6rem;
+    text-transform: uppercase;
+  }
+  .follow-us__icons{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+  }
+  .fa-instagram{
+    font-size: 1.5rem;
+  }
+  .fa-facebook{
+    font-size: 1.5rem;
   }
 
+  .start_now{
+  min-width: 30vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  }
+  
+  .start-now__btn{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding: .8rem;
+    font-size: .8rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-color: antiquewhite;
+    border: 1px solid rgba(247, 242, 242, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
 
 
 
@@ -388,7 +433,7 @@ body {
   .menu{
     max-width: 40%;
     min-height: 4vh;
-    margin-left: 10%;
+    margin:auto;
   }
   .menu__desktop{
     align-items:center;
@@ -421,6 +466,13 @@ body {
   .hero__info-cards-forex{
     width: 20vw;
     margin-left:0 ;
+  }
+
+  .social-networks{
+    grid-template-columns:1fr 1.2fr;
+  }
+  .follow-us{
+    margin-top: 2.5rem;
   }
   
 
@@ -503,12 +555,25 @@ body {
     width: 20vw;
     margin-left:0 ;
   }
+  .social-networks{
+    grid-template-columns:1fr 1.3fr;
+  }
+
+  .follow-us{
+    margin-top: 2.5rem;
+  }
+  .start-now__btn:hover{
+    transform: scale(1.06);
+    background-color:rgb(233, 215, 192);
+  }
+
+  
 }
 
 
 /**MEDIA QUERIES CUSTOM**/
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1100px){
   .menu{
     margin: auto;
   }
@@ -518,12 +583,10 @@ body {
   .hero__title h1{
     font-size: 12.6vw;
   }
-
   .hero__info-cards-señales{
     width: 12vw;
     min-height: 14vh;
     padding: .5rem;
-    
     margin-right: 0
   }
   .hero__info-cards-forex{
