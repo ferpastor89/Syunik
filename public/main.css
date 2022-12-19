@@ -294,9 +294,11 @@ body {
   }
   .hero__info-cards-forex{
     width: 45%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
   .hero__info-cards-señales{
     width: 45%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
   .info-cards p{
@@ -330,17 +332,16 @@ body {
     gap: .5rem;
   }
   .fa-instagram{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .fa-facebook{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .start_now{
   min-width: 30vw;
   display: grid;
   grid-template-columns: 1fr;
-  
   }
   
   .start-now__btn{
@@ -355,6 +356,9 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
+
+  /***SUMATE EN 3 PASOS***/
+
   .card-bar{
     display: grid;
     grid-template-columns: 1fr;
@@ -362,8 +366,15 @@ body {
     border-radius: 2rem;
     width: 95%;
     margin: auto;
+    overflow: hidden;
     background-color: antiquewhite;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .card-animation{
+    display: flex;
+    flex-direction: row;
+    animation: scroll 40s linear infinite;
+    width: ;
   }
   .card-bar p{
     font-family:"MontserratMedium";
@@ -373,10 +384,9 @@ body {
     font-size: .5rem ;
   }
   .card-bar__content__steps{
-    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-family:"MontserratBold";
   }
@@ -384,6 +394,12 @@ body {
     font-family:"MontserratMedium" ;
     font-size: 1.1rem;
     font-weight: 100;
+  }
+  .card-bar__content__steps h2:first-child{
+    padding-left: .5rem;
+  }
+  .card-bar__content__steps h2:last-child{
+    padding-right: .5rem;
   }
   .card-bar__content__join-us-top{
     display: flex;
@@ -472,7 +488,7 @@ body {
   .menu{
     max-width: 40%;
     min-height: 4vh;
-    margin:auto;
+    margin-right: 25%;
   }
   .menu__desktop{
     align-items:center;
@@ -481,22 +497,17 @@ body {
   .menu__desktop-items{
     font-size: .8rem;
   }
-
   .hero{
     grid-template-columns: 2fr 1fr;
-    
   }
-  
   .hero__title h1{
     font-size: 15vw;
   }
-
   .info-cards{
     flex-direction: column;
     justify-content:center;
     align-items:center;
   }
-
   .hero__info-cards-señales{
     width: 20vw;
     margin-right: 0;
@@ -508,12 +519,20 @@ body {
   }
 
   .social-networks{
-    grid-template-columns:1fr 1.2fr;
+    grid-template-columns:1fr 1.4fr;
   }
   .follow-us{
     margin-top: 2.5rem;
   }
-  
+  .card-bar__content__steps h2{
+    font-size: 1.8rem;
+  }
+  .card-bar__content__steps h2:first-child{
+    padding-left: 1rem;
+  }
+  .card-bar__content__steps h2:last-child{
+    padding-right: 1rem;
+  }
 
 
 
@@ -547,7 +566,7 @@ body {
   .menu{
     max-width: 35%;
     min-height: 5vh;
-    margin:auto;
+    margin-right: 30%;
   }
   .menu__desktop{
     align-items: center;
@@ -608,15 +627,27 @@ body {
   .card-bar__content__steps h2{
     font-size: 2rem;
   }
+  .card-bar__content__steps h2{
+    font-size: 1.8rem;
+  }
+  .card-bar__content__steps h2:first-child{
+    padding-left: 1rem;
+  }
+  .card-bar__content__steps h2:last-child{
+    padding-right: 1rem;
+  }
+  .card-bar__content__join-us-top{
+    align-items: flex-end;
+  }
   
 }
 
 
-/**MEDIA QUERIES CUSTOM**/
+/**MEDIA QUERIES CUSTOM 1328px***/
 
 @media screen and (min-width:1100px){
   .menu{
-    margin-left: 20%;
+    margin-right: 30%;
   }
   .hero{
     grid-template-columns:2fr 1fr;
@@ -643,7 +674,12 @@ body {
   }
   .card-bar__content__steps h2{
     font-size: 2.5rem;
-    
+  }
+  .card-bar__content__join-us-top{
+    margin-bottom: 1rem;
+  }
+  .card-bar__content__join-us--bottom{
+    margin-top: 1rem;
   }
   
   }
