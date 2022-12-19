@@ -224,7 +224,7 @@ body {
     flex-wrap: wrap;
     /*align-items: center;*/
     margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .logo{
@@ -284,18 +284,23 @@ body {
     text-transform: uppercase;
     font-size: 5em;
     line-height: 1em;
-    
   }
 
   .info-cards{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-left: 1rem;
-    margin-right: 1rem
+  }
+  .hero__info-cards-forex{
+    width: 45%;
+  }
+  .hero__info-cards-señales{
+    width: 45%;
   }
 
   .info-cards p{
+    font-family: "MontserratMedium";
     font-size: .7rem;
     line-height: .8rem;
   }
@@ -350,6 +355,48 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
 
+  .card-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #242323;
+    border-radius: 2rem;
+    width: 95%;
+    margin: auto;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .card-bar p{
+    font-family:"MontserratMedium";
+    font-size: .5rem;
+  }
+  .card-bar span{
+    font-size: .5rem ;
+  }
+  .card-bar__content__steps{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family:"MontserratBold";
+  }
+  .card-bar__content__steps h2{
+    font-family:"MontserratMedium" ;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  .card-bar__content__join-us-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card-bar__content__join-us--bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+
 
 
 
@@ -364,20 +411,12 @@ body {
 
 
 
-.card-bar__content__steps h2{
-  font-family:"MontserratBold";
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 100;
-}
+
 
 .iphone14{
   width: 60%;
 }
 
-.card-bar__content__steps{
-  font-size: 2rem;
-}
 
 .courses-cards span{
   font-weight: bold;
@@ -566,7 +605,9 @@ body {
     transform: scale(1.06);
     background-color:rgb(233, 215, 192);
   }
-
+  .card-bar__content__steps h2{
+    font-size: 2rem;
+  }
   
 }
 
@@ -575,7 +616,7 @@ body {
 
 @media screen and (min-width:1100px){
   .menu{
-    margin: auto;
+    margin-left: 20%;
   }
   .hero{
     grid-template-columns:2fr 1fr;
@@ -593,5 +634,17 @@ body {
     width:12vw;
     margin-left:0 ;
     padding: .5rem;
+  }
+  .card-bar{
+    min-height: 15vh;
+    border-radius: 5rem;
+    align-items: center;
+
+  }
+  .card-bar__content__steps h2{
+    font-size: 2.5rem;
+    
+  }
+  
   }
 }
