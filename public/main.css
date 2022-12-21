@@ -556,6 +556,19 @@ body {
 
 
 
+  /***MEDIA QUERIE MOVIL ESTANDAR***/
+
+  @media screen and (min-width:480px){
+    .hero__title h1{
+      font-size: 6.5em;
+  }
+  .cel-frame{
+    min-height: 60vh;
+    margin-top: 7%;
+  }
+}
+  
+  
 
 
 
@@ -563,10 +576,9 @@ body {
 
 
 
+  /***MEDIA QUERIES TABLET***/
 
-  /**MEDIA QUERIES TABLET**/
-
-@media screen and (min-width:601px) and (max-width:967px){
+@media screen and (min-width:601px) and (max-width:959px){
 
   .logo{
     margin-left: .5rem;
@@ -635,7 +647,8 @@ body {
   .cel-frame{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 30vh;
+    min-height: 40vh;
+    gap: .2rem;
   }
   .cel-frame__img{
     align-items: center;
@@ -645,9 +658,11 @@ body {
     min-height: 32vh;
   }
   .cel-frame__text{
-    max-height: 30vh;
+    flex-direction: column;
+    justify-content: end;
+    
+    max-height: 45vh;
     align-items: flex-start;
-    margin-top:25% ;
   }
   .cel-frame__text-h3{
     text-align: left;
@@ -655,7 +670,8 @@ body {
 
   }
   .cel-frame__text-btn{
-    
+    margin-bottom: 0;
+  
   }
 
 
@@ -683,7 +699,7 @@ body {
 
 /**MEDIA QUERIES DESKTOP**/
 
-@media screen and (min-width:968px){
+@media screen and (min-width:960px){
   .logo{
     flex-basis: 8rem;
   }
@@ -747,6 +763,7 @@ body {
   .start-now__btn:hover{
     transform: scale(1.06);
     background-color:rgb(233, 215, 192);
+    cursor: pointer;
   }
   .join-us{
     margin-top: 3%;
@@ -780,6 +797,40 @@ body {
   .card-bar__content__join-us-top{
     align-items: flex-end;
   }
+  .cel-frame__title-h2{
+    font-size: 2rem;
+  }
+  .cel-frame{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 50vh;
+    margin-top: 3%;
+  }
+  .cel-frame__img{
+    align-items: center;
+    max-height: 45vh;
+  }
+  .iphone14{
+    min-height: 40vh;
+  }
+  .cel-frame__text{
+    flex-direction: column;
+    justify-content: end;
+    max-height: 45vh;
+    align-items: flex-start;
+  }
+  .cel-frame__text-h3{
+    text-align:justify;
+    margin-bottom: 5%;
+
+  }
+  .cel-frame__text-btn{
+    margin-bottom: ;
+  }
+  .cel-frame__text-btn:hover{
+    transform: scale(1.06);
+  }
+
   
 }
 
@@ -834,6 +885,39 @@ body {
     margin-bottom: .5rem;
     margin-top: .5rem;
     font-size: .5rem;
+  }
+  .cel-frame__title-h2{
+    font-size: 2.8rem;
+  }
+  .cel-frame{
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    min-height: 70vh;
+    margin-top: 3%;
+  }
+  .cel-frame__img{
+    align-items: center;
+    max-height: 55vh;
+  }
+  .iphone14{
+    min-height: 55vh;
+  }
+  .cel-frame__text{
+    flex-direction: column;
+    justify-content:flex-start;
+    min-height: 26vh;
+    align-items: flex-start;
+    margin-left: 0;
+    
+  }
+  .cel-frame__text-h3{
+    text-align:justify;
+    margin-bottom: 5%;
+
+  }
+  .cel-frame__text-btn:hover{
+    transform: scale(1.06);
+    cursor: pointer;
   }
 
   }
