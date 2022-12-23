@@ -141,18 +141,31 @@ body {
     /**RESOURCES**/
 
     :root{
-      --gradiente:linear-gradient(
+      --gradiente-hero:linear-gradient(
         60deg ,
         orange,
         orange,
         #ce41a3,
         #ce41a3,
         #5d66e7,
+        #dcddf7,
         #a4a9f8,
         #4751db,
         #ce41a3,
         orange
         );
+    }
+    :root{
+      --gradiente-frame-courses:linear-gradient(
+        50deg,
+        #a4a9f8,
+        #e6e7f5,
+        #e6e7f5,
+        #ecd1e4,
+        #e6e7f5,
+        #dcddf7
+      );
+      
     }
 
     @font-face{
@@ -209,7 +222,7 @@ body {
       width: 90%;
       margin: auto;
       min-height: 60vh;
-      border-radius: 3rem;
+      border-radius: 6rem;
       background-color: transparent;
       backdrop-filter:blur(.2rem);
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
@@ -218,11 +231,12 @@ body {
       font-family: "headingNowTitular" ;
       font-size: 2rem;
       text-transform: uppercase;
-      border: 2px solid rgb(255, 115, 0);
-      min-width: 90%;
+      border: 1px solid rgb(255, 115, 0);
+      min-width: 99%;
       padding: 1rem 0;
       border-radius: 3rem;
       text-align: center;
+      /*margin-top: 15%;*/
     }
     .style-text{
       font-family:"MontserratMedium";
@@ -232,7 +246,6 @@ body {
     }
     .style-btn-cards{
       width: 40%;
-      border: 1px solid #363434;
       background-color: orangered;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
       color: whitesmoke;
@@ -240,7 +253,7 @@ body {
       padding: .5rem 0;
       text-transform: uppercase;
       font-family:"MontserratMedium" ;
-      font-size: .8rem;
+      font-size: .7rem;
 
     }
 
@@ -250,12 +263,11 @@ body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: var(--gradiente);
-      background-size: 500%;
-      max-width: 1100px;
-      margin: 0 auto;
+      background-image: var(--gradiente-hero);
+      background-size: 800%;
       animation: bg-animation 40s infinite alternate;
     }
+
 
     /*** HEADER ***/
 
@@ -266,8 +278,9 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     /*align-items: center;*/
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
+    max-width: 1100px;
+    margin: auto;
+    margin-top:3%;
   }
 
   .logo{
@@ -314,6 +327,9 @@ body {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 5%;
   }
 
 
@@ -339,11 +355,11 @@ body {
   }
   .hero__info-cards-forex{
     width: 45%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
   }
   .hero__info-cards-señales{
     width: 45%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
   }
 
   .info-cards p{
@@ -410,20 +426,22 @@ body {
 
   .join-us{
     width:95%;
+    max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     border: 1px solid #242323;
     border-radius: 2.2rem;
     background-color: antiquewhite;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 8%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    margin-bottom: 3%;
   }
   .card-bar{
     width: 95%;
     height: 5vh;
     margin: auto;
     overflow: hidden;
+    
   }
   .card-bar .card-animation{
     display: flex;
@@ -488,10 +506,15 @@ body {
   }
 
   /***CEL FRAME***/
-  
+
+  .contenedor-frame-courses{
+    background-image: var(--gradiente-frame-courses);
+    /*background-size: 400%;*/
+  }
   .line-divider{
     width:25%;
     margin: 0 auto;
+    margin-top: 5%;
     margin-bottom: 5%;
     min-height: 0.1rem;
     border: none;
@@ -502,12 +525,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height:55vh;
+    max-width: 1100px;
+    margin: auto;
   }
   .cel-frame__title{
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .cel-frame__title-h2{
     font-family: "MontserratBold";
+    font-weight: 600;
     font-size: 1rem ;
     text-transform: uppercase;
   }
@@ -565,7 +594,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
   .courses__title{
     display: flex;
@@ -580,7 +609,16 @@ body {
     text-transform: uppercase;
   }
   .courses__title-h2 span{
-    color: rgb(255, 102, 0);
+    color: rgba(61, 43, 226, 0.644);
+  }
+  .style-text{
+    margin-top: 8%;
+    margin-bottom: 12%;
+    max-height: 35%;
+  }
+  .style-text:nth-child(3){
+    margin-top: 3%;
+    margin-bottom: 2%;
   }
   .courses-cards__introduction{
     display: flex;
@@ -588,6 +626,7 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgb(255, 115, 0);
+    min-height: 65vh;
   }
 
   .courses-cards__advanced{
@@ -596,9 +635,10 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgb(61, 43, 226);
+    min-height: 65vh;
   }
   .courses-cards__advanced h3{
-    border: 2px solid rgb(61, 43, 226);
+    border: 1px solid rgb(61, 43, 226);
   }
   .courses-cards__advanced button{
     background-color:rgb(61, 43, 226);
@@ -609,14 +649,18 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgba(44, 226, 44, 0.829);
+    min-height: 65vh;
   }
   .courses-cards__intensive-crypto h3{
-    border:2px solid rgba(44, 226, 44, 0.829);
+    border:1px solid rgba(44, 226, 44, 0.829);
   }
   .courses-cards__intensive-crypto button{
     background-color: rgba(44, 226, 44, 0.829);
+    margin-bottom: 10%;
   }
-
+  .courses-cards img{
+    width: 40%;
+  }
 
   
 
@@ -656,7 +700,7 @@ body {
 
 
 
-  /***MEDIA QUERIE MOVIL ESTANDAR***/
+  /***MEDIA QUERY MOVIL ESTANDAR***/
 
   @media screen and (min-width:480px){
     .hero__title h1{
@@ -774,7 +818,7 @@ body {
   
   }
 
-
+  
 }
 
     
@@ -800,6 +844,10 @@ body {
 /**MEDIA QUERIES DESKTOP**/
 
 @media screen and (min-width:960px){
+
+  .header{
+    margin-top: 1.5%;
+  }
   .logo{
     flex-basis: 8rem;
   }
@@ -817,6 +865,7 @@ body {
   }
   .hero{
     grid-template-columns:2fr 1fr;
+    margin-top: 3%;
   }
 
   .hero__title h1{
@@ -830,10 +879,14 @@ body {
   }
 
   .hero__info-cards-señales:hover{
-    box-shadow: 5px 5px 15px black;
+    /*box-shadow: 5px 5px 15px black;*/
+    border-bottom: 5px solid #242323;
+    border-right: 5px solid #242323;
   }
   .hero__info-cards-forex:hover{
-    box-shadow: 5px 5px 15px black;
+    /*box-shadow: 5px 5px 15px black;*/
+    border-bottom: 5px solid #242323;
+    border-right: 5px solid #242323;
   }
   .info-cards p{
     font-size: .8rem;
@@ -930,19 +983,61 @@ body {
   .cel-frame__text-btn:hover{
     transform: scale(1.06);
   }
-
-  
+  .courses{
+    min-height: 75vh;
+  }
+  .courses-cards{
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+  }
+  .courses-cards__introduction{
+    min-height: 60vh;
+  }
+  .courses-cards__advanced{
+    min-height: 60vh;
+  }
+  .courses-cards__intensive-crypto{
+    min-height: 60vh;
+  }
+  .courses__title h2{
+    font-size: 3.5rem;
+  }
+  .style-text:nth-child(3){
+    word-wrap:break-word;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .courses-cards__intensive-crypto img{
+    margin-top:5%;
+  }
+  .courses-cards__introduction button{
+    margin-bottom: 3%;
+  }
+  .courses-cards__advanced button{
+    margin-bottom: 3%;
+  }
+  .courses-cards__intensive-crypto button{
+    margin-bottom:3%;
+  }
 }
 
 
 /**MEDIA QUERIES CUSTOM 1328px***/
 
 @media screen and (min-width:1100px){
+
+  .header{
+    margin-top: 2%;
+  }
   .menu{
     margin-right: 30%;
   }
   .hero{
     grid-template-columns:2fr 1fr;
+    margin-top: 2%;
   }
   .hero__title h1{
     font-size: 12.6vw;
@@ -957,6 +1052,9 @@ body {
     width:12vw;
     margin-left:0 ;
     padding: .5rem;
+  }
+  .follow-us{
+    padding-left: 20%;
   }
   .join-us{
     margin-top: 3%;
@@ -992,8 +1090,8 @@ body {
   .cel-frame{
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    min-height: 70vh;
-    margin-top: 3%;
+    max-height: 60vh;
+    margin-top: 7%;
   }
   .cel-frame__img{
     align-items: center;
@@ -1018,6 +1116,13 @@ body {
   .cel-frame__text-btn:hover{
     transform: scale(1.06);
     cursor: pointer;
+  }
+  .courses__title h2{
+    font-size: 4rem;
+    margin-bottom: 1%;
+  }
+  .courses-cards{
+    max-width: 1100px;
   }
 
   }
