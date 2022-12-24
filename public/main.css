@@ -156,7 +156,7 @@ body {
         );
     }
     :root{
-      --gradiente-frame-courses:linear-gradient(
+      --gradiente-frame:linear-gradient(
         50deg,
         #a4a9f8,
         #e6e7f5,
@@ -167,6 +167,24 @@ body {
       );
       
     }
+    :root{
+      --gradiente-cursos-40Off-cripto:linear-gradient(
+        80deg,
+        #727aeb,
+        #727aeb,
+        #727aeb,
+        #7279e7,
+        #8d93e9,
+        #a2a7f0,
+        #ddb0cf,
+        #d6a6c8,
+        #e48bc9,
+        #e28ac8
+      
+      );
+    }
+
+
 
     @font-face{
       font-family:"headingNowTitular";
@@ -221,7 +239,7 @@ body {
       align-items: center;
       width: 90%;
       margin: auto;
-      min-height: 60vh;
+      max-height: 65vh;
       border-radius: 6rem;
       background-color: transparent;
       backdrop-filter:blur(.2rem);
@@ -507,8 +525,8 @@ body {
 
   /***CEL FRAME***/
 
-  .contenedor-frame-courses{
-    background-image: var(--gradiente-frame-courses);
+  .contenedor-frame{
+    background-image: var(--gradiente-frame);
     /*background-size: 400%;*/
   }
   .line-divider{
@@ -589,19 +607,25 @@ body {
 
   /***CURSOS***/
 
+  .courses-discount-cripto-cards{
+    background-image: var(--gradiente-cursos-40Off-cripto);
+    padding-top: 5%;
+  }
   .courses-cards{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 10%;
+
   }
   .courses__title{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
   .courses__title-h2{
     font-family: "headingNowTitular";
@@ -662,12 +686,71 @@ body {
     width: 40%;
   }
 
-  
+  .courses-cards span{
+    font-weight: bold;
+  }
 
+  /***40% OFF***/
 
-.courses-cards span{
-  font-weight: bold;
-}
+  .discount{
+    min-height: 50vh;
+    margin-top: 10%;
+  }
+  .special-discount-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .special-discount-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .discount p{
+    font-family: "MontserratMedium";
+    text-transform: uppercase;
+    font-size: .5rem;
+    color: #f0a7da;
+  }
+  .discount__bg-image-oval{
+    width:90% ;
+    min-height: 30vh;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    border: 1px solid  #f0a7da;
+    margin: auto;
+    border-radius: 60%;
+    position: relative;
+  }
+  .discount__bg-image-circle{
+    position: absolute;
+    width: 57%;
+    min-height: 30vh ;
+    border: 1px solid  #f0a7da;
+    border-radius: 100%;
+    background-color: #f5bde4;
+    left: 21%;
+  }
+  .discount__bg-image-oval h3{
+    position: absolute;
+    left: 8%;
+    top: 23%;
+    font-family: "MontserratMedium";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .discount__bg-image-oval h3 span{
+    font-weight: bold;
+  }
+
+  /*** CRIPTO CARDS***/
 
 .cripto-cards{
   display: flex;
@@ -816,7 +899,6 @@ body {
   .cel-frame__text{
     flex-direction: column;
     justify-content: end;
-    
     max-height: 45vh;
     align-items: flex-start;
   }
@@ -831,23 +913,61 @@ body {
   .courses__title-h2{
     font-size: 3rem;
   }
+  .courses{
+    display: grid;
+    grid-template-columns:auto ;
+    border: 1px solid gray;
+    border-radius: 10rem;
+    width: 90%;
+    margin: auto;
+    background-color: #f5f5fa;
+    margin-bottom: 10%;
+  }
   .courses-cards{
     display: grid;
     grid-template-columns: 1fr 1fr ;
+    margin-top: 10%;
+    margin-bottom: 5%;
   }
   .courses-cards__introduction{
     width: 90%;
     margin-left: 5%;
+    justify-content: space-around;
+    min-height: 35vh ;
   }
   .courses-cards__advanced{
     width: 90%;
     margin-right: 5%;
+    justify-content: space-around;
+    min-height: 35vh ;
   }
   .courses-cards__intensive-crypto{
     margin-left: 60%;
     width: 90%;
+    justify-content: space-around;
+    min-height: 35vh ;
   }
-  
+
+  .discount{
+    min-height: 65vh;
+    margin-top: 15%;
+  }
+  .discount__bg-image-oval{
+    min-height: 37vh;
+  }
+  .discount__bg-image-circle{
+    width: 38%;
+    min-height: 37vh ;
+    left: 30%;
+  }
+  .discount__bg-image-oval h3{
+    position: absolute;
+    left: 18%;
+    top: 25%;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    line-height: 2rem ;
+  }
 }
 
     
@@ -895,6 +1015,7 @@ body {
   .hero{
     grid-template-columns:2fr 1fr;
     margin-top: 3%;
+    margin-left:2% ;
   }
 
   .hero__title h1{
@@ -908,12 +1029,10 @@ body {
   }
 
   .hero__info-cards-señales:hover{
-    /*box-shadow: 5px 5px 15px black;*/
     border-bottom: 5px solid #242323;
     border-right: 5px solid #242323;
   }
   .hero__info-cards-forex:hover{
-    /*box-shadow: 5px 5px 15px black;*/
     border-bottom: 5px solid #242323;
     border-right: 5px solid #242323;
   }
@@ -936,7 +1055,7 @@ body {
     margin-left:0 ;
   }
   .social-networks{
-    grid-template-columns:1fr 1.3fr;
+    grid-template-columns:1fr 1.4fr;
   }
 
   .follow-us{
@@ -1014,22 +1133,29 @@ body {
   }
   .courses{
     min-height: 75vh;
+    border: 1px solid rgb(241, 238, 238);
+    border-radius: 8rem;
+    background-color:rgb(243, 239, 239);
+    width: 95%;
+    margin: auto;
   }
   .courses-cards{
     flex-direction: row;
-    gap: 2rem;
-    align-items: center;
+    gap: 1rem;
     width: 95%;
     margin: auto;
   }
   .courses-cards__introduction{
     min-height: 60vh;
+    margin-top: 6%;
   }
   .courses-cards__advanced{
     min-height: 60vh;
+    margin-top: 6%;
   }
   .courses-cards__intensive-crypto{
     min-height: 60vh;
+    margin-top: 6%;
   }
   .courses__title h2{
     font-size: 3.5rem;
@@ -1045,11 +1171,20 @@ body {
   .courses-cards__introduction button{
     margin-bottom: 3%;
   }
+  .courses-cards__introduction button:hover{
+    transform: scale(1.06);
+  }
   .courses-cards__advanced button{
     margin-bottom: 3%;
   }
+  .courses-cards__advanced button:hover{
+    transform: scale(1.06);
+  }
   .courses-cards__intensive-crypto button{
     margin-bottom:3%;
+  }
+  .courses-cards__intensive-crypto button:hover{
+    transform: scale(1.06);
   }
 }
 
@@ -1064,9 +1199,13 @@ body {
   .menu{
     margin-right: 30%;
   }
+  .logo{
+    margin-left: 2%;
+  }
   .hero{
     grid-template-columns:2fr 1fr;
     margin-top: 2%;
+    margin-left: 11% ;
   }
   .hero__title h1{
     font-size: 12.6vw;
@@ -1083,12 +1222,13 @@ body {
     padding: .5rem;
   }
   .follow-us{
-    padding-left: 20%;
+    padding-left: 23%;
   }
   .join-us{
     margin-top: 3%;
     border-radius: 5rem;
     box-shadow: 5px 5px 15px black;
+    width: 80%;
   }
   .join-us:hover{
     box-shadow: 10px 10px 20px black;
@@ -1151,9 +1291,26 @@ body {
     font-size: 4rem;
     margin-bottom: 1%;
   }
+  .courses{
+    width: 85%;
+    min-height: 85vh;
+  }
   .courses-cards{
     max-width: 1100px;
+    min-height: 80%;
+    margin-bottom: 5%;
+    gap: 2rem;
   }
+  .courses-cards__introduction{
+    min-height:70vh;
+  }
+  .courses-cards__advanced{
+    min-height:70vh;
+  }
+  .courses-cards__intensive-crypto{
+    min-height:70vh;
+  }
+
 
   }
 
