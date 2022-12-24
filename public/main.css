@@ -254,7 +254,7 @@ body {
       text-transform: uppercase;
       font-family:"MontserratMedium" ;
       font-size: .7rem;
-
+      margin-bottom: 10%;
     }
 
     /**COMIENZO DE CODIGO**/
@@ -710,6 +710,18 @@ body {
     min-height: 60vh;
     margin-top: 7%;
   }
+  .courses__title-h2{
+    font-size: 2.3rem;
+  }
+  .courses-cards__introduction {
+    width: 75%;
+  }
+  .courses-cards__advanced{
+    width: 75%;
+  }
+  .courses-cards__intensive-crypto{
+    width: 75%;
+  }
 }
   
   
@@ -815,9 +827,26 @@ body {
   }
   .cel-frame__text-btn{
     margin-bottom: 0;
-  
   }
-
+  .courses__title-h2{
+    font-size: 3rem;
+  }
+  .courses-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  }
+  .courses-cards__introduction{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .courses-cards__advanced{
+    width: 90%;
+    margin-right: 5%;
+  }
+  .courses-cards__intensive-crypto{
+    margin-left: 60%;
+    width: 90%;
+  }
   
 }
 
@@ -1102,10 +1131,11 @@ body {
   }
   .cel-frame__text{
     flex-direction: column;
-    justify-content:flex-start;
+    justify-content:flex-end;
     min-height: 26vh;
     align-items: flex-start;
     margin-left: 0;
+    margin-top: 28%;
     
   }
   .cel-frame__text-h3{
