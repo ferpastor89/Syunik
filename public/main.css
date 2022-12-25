@@ -718,7 +718,14 @@ body {
     font-size: .5rem;
     color: #f0a7da;
   }
+  .discount p span{
+    color: #4751db;
+  }
   .discount__bg-image-oval{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width:90% ;
     min-height: 30vh;
     margin-top: 15%;
@@ -735,18 +742,15 @@ body {
     border: 1px solid  #f0a7da;
     border-radius: 100%;
     background-color: #f5bde4;
-    left: 21%;
   }
   .discount__bg-image-oval h3{
     position: absolute;
-    left: 8%;
-    top: 23%;
     font-family: "MontserratMedium";
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
   }
-  .discount__bg-image-oval h3 span{
+  .off{
     font-weight: bold;
   }
 
@@ -839,7 +843,8 @@ body {
     grid-template-columns: 2fr 1fr;
   }
   .hero__title h1{
-    font-size: 15vw;
+    font-size: 16.1vw;
+    margin-left: 3%;
   }
   .info-cards{
     flex-direction: column;
@@ -876,7 +881,6 @@ body {
     min-height:7vh ;
     align-items: center;
   }
-
   .card-bar__content__steps h2{
     font-size: 1.7rem;
   }
@@ -885,30 +889,36 @@ body {
   }
   .cel-frame{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 40vh;
-    gap: .2rem;
+    grid-template-columns: 1.2fr 1fr;
+    min-height: 30vh;
+    gap: .1rem;
+    margin-top: 0;
   }
   .cel-frame__img{
     align-items: center;
-    max-height: 45vh;
+    max-height: 55vh;
   }
   .iphone14{
     min-height: 32vh;
+    
   }
   .cel-frame__text{
     flex-direction: column;
     justify-content: end;
-    max-height: 45vh;
     align-items: flex-start;
   }
   .cel-frame__text-h3{
     text-align: left;
-    margin-bottom: .5rem;
-
+    max-height: 5vh;
+    max-width: 42vw;
+    font-size: .9rem;
   }
   .cel-frame__text-btn{
     margin-bottom: 0;
+    margin-top: 15%;
+  }
+  .line-divider{
+    margin-top: ;
   }
   .courses__title-h2{
     font-size: 3rem;
@@ -922,6 +932,7 @@ body {
     margin: auto;
     background-color: #f5f5fa;
     margin-bottom: 10%;
+
   }
   .courses-cards{
     display: grid;
@@ -949,24 +960,69 @@ body {
   }
 
   .discount{
-    min-height: 65vh;
+    min-height: 60vh;
     margin-top: 15%;
   }
   .discount__bg-image-oval{
-    min-height: 37vh;
+    min-height: 30vh;
   }
   .discount__bg-image-circle{
-    width: 38%;
-    min-height: 37vh ;
-    left: 30%;
+    width: 48%;
+    min-height: 30vh ;
   }
   .discount__bg-image-oval h3{
     position: absolute;
-    left: 18%;
-    top: 25%;
     font-size: 1.8rem;
     text-transform: uppercase;
     line-height: 2rem ;
+  }
+}
+
+/***MEDIA QUERY LANDSCAPE CEL***/
+
+@media screen and (min-width:601px) and (orientation:landscape){
+  .contenedor-frame{
+    min-height: 150vh;
+  }
+  .line-divider{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+  .cel-frame{
+    min-height: 70vh;
+  }
+  .cel-frame img{
+    min-height: 90vh;
+    margin-top: 25vh;
+  }
+
+  .courses{
+    min-height: 250vh;
+
+  }
+  .courses-cards__introduction{
+    min-height: 100vh;
+  }
+  .courses-cards__advanced{
+    min-height: 100vh;
+  }
+  .courses-cards__intensive-crypto{
+    min-height: 100vh;
+  }
+
+  .discount{
+    min-height: 150vh;
+  }
+  .discount__bg-image-oval{
+    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .discount__bg-image-circle{
+    min-height: 84vh;
+    min-width: 45vw;
+    margin: auto;
   }
 }
 
@@ -1260,27 +1316,27 @@ body {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     max-height: 60vh;
-    margin-top: 7%;
+    padding-bottom: 15vh;
   }
   .cel-frame__img{
     align-items: center;
     max-height: 55vh;
   }
   .iphone14{
-    min-height: 55vh;
+    max-height: 30vh;
   }
   .cel-frame__text{
     flex-direction: column;
-    justify-content:flex-end;
-    min-height: 26vh;
+    justify-content:end;
     align-items: flex-start;
     margin-left: 0;
-    margin-top: 28%;
-    
+    /*max-height: 25vh;
+    margin-top: 50%;*/
   }
   .cel-frame__text-h3{
-    text-align:justify;
-    margin-bottom: 5%;
+    /*text-align:justify;
+    margin-top: 25vh;
+    margin-bottom: 5%;*/
 
   }
   .cel-frame__text-btn:hover{
