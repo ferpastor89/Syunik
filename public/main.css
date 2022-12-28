@@ -252,7 +252,6 @@ body {
       padding: 1rem 0;
       border-radius: 3rem;
       text-align: center;
-      /*margin-top: 15%;*/
     }
     .style-text{
       font-family:"MontserratMedium";
@@ -293,7 +292,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*align-items: center;*/
     max-width: 1100px;
     margin: auto;
     margin-top:3%;
@@ -525,7 +523,6 @@ body {
 
   .contenedor-frame{
     background-image: var(--gradiente-frame);
-    /*background-size: 400%;*/
   }
   .line-divider{
     width:25%;
@@ -768,18 +765,28 @@ body {
   /*** CRIPTO CARDS***/
 
 .cripto-cards{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap:nowrap;
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: content;
-  
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 15%;
 }
-.cripto-cards img{
+.cripto-cards-animate{
+  display: flex;
+  animation: scroll 50s linear infinite;
+  -webkit-animation: scroll 50s linear infinite ;
+  width: calc(30% * 42);
+}
+.card{
+  width: 30%;
+}
+.cripto-cards.card img{
   width: 100%;
 }
+
+
+
+
 
 .testimony img{
   max-width: 25%;
@@ -970,7 +977,7 @@ body {
   }
 
   .discount{
-    min-height: 60vh;
+    min-height: 50vh;
     margin-top: 15%;
   }
   .discount__bg-image-oval{
@@ -986,7 +993,17 @@ body {
     text-transform: uppercase;
     line-height: 2rem ;
   }
+  .cripto-cards{
+    
+  }
+  .card{
+    width: 2%;
+  }
 }
+
+
+
+
 
 /***MEDIA QUERY LANDSCAPE CEL***/
 
@@ -1039,7 +1056,7 @@ body {
   }
 
   .discount{
-    min-height: 150vh;
+    min-height: 130vh;
   }
   .discount__bg-image-oval{
     min-height: 85vh;
@@ -1289,6 +1306,9 @@ body {
     font-size: 2rem;
     line-height: 2.3rem;
   }
+  .card{
+    width: 1.2%;
+  }
 }
 
 
@@ -1393,7 +1413,7 @@ body {
     cursor: pointer;
   }
   .courses__title h2{
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 1%;
   }
   .courses{
@@ -1403,7 +1423,7 @@ body {
   .courses-cards{
     max-width: 1100px;
     min-height: 80%;
-    margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
     gap: 2rem;
   }
   .courses-cards__introduction{
@@ -1415,7 +1435,13 @@ body {
   .courses-cards__intensive-crypto{
     min-height:70vh;
   }
-
+  .style-inside-cards{
+    font-size: 2.5rem;
+  }
+  .discount__bg-image-oval h3{
+    font-size: 2.7rem;
+    line-height: 2.7rem;
+  }
 
   }
 
