@@ -465,6 +465,18 @@ body {
     -webkit-animation: scroll 40s linear infinite;
     width:calc(35% * 12) ;
   }
+
+  @keyframes scroll {
+    0% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0);
+    }
+    100% {
+      -webkit-transform:translateX(calc(-25% * 3 ));
+      transform:translateX(calc(-25% * 3));
+    }
+  }
+
   .card-bar .card-bar__content__steps{
     width: 25%;
   }
@@ -508,16 +520,6 @@ body {
     justify-content: space-around;
   }
 
-  @keyframes scroll {
-    0% {
-      -webkit-transform:translateX(0);
-      transform:translateX(0);
-    }
-    100% {
-      -webkit-transform:translateX(calc(-25% * 3 ));
-      transform:translateX(calc(-25% * 3));
-    }
-  }
 
   /***CEL FRAME***/
 
@@ -771,17 +773,27 @@ body {
   overflow: hidden;
   margin-bottom: 15%;
 }
-.cripto-cards-animate{
+.cripto-cards .cripto-cards-animate{
   display: flex;
-  animation: scroll 50s linear infinite;
-  -webkit-animation: scroll 50s linear infinite ;
-  width: calc(30% * 42);
+  animation: cripto 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite ;
+  width: calc(25% * 16);
 }
-.card{
-  width: 30%;
+.cripto-cards .card{
+  width: 20%;
 }
-.cripto-cards.card img{
+.cripto-cards .card img{
   width: 100%;
+}
+@keyframes cripto {
+  0% {
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+  }
+  100% {
+    -webkit-transform:translateX(calc(-20% * 8 ));
+    transform:translateX(calc(-20% * 8 ));
+  }
 }
 
 
@@ -807,25 +819,39 @@ body {
 
   /***MEDIA QUERY MOVIL ESTANDAR***/
 
-  @media screen and (min-width:480px){
-    .hero__title h1{
-      font-size: 6.5em;
+  @media screen and (min-width:380px) and (max-width:480px){
+
+  .hero__title h1{
+    font-size: 5.5em;
+  }
+  .card-bar{
+    height: 4vh;
+  }
+  .social-networks{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr ;
   }
   .cel-frame{
     min-height: 60vh;
     margin-top: 7%;
   }
+  .courses{
+    width: 85%;
+  }
   .courses__title-h2{
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
   .courses-cards__introduction {
-    width: 75%;
+    width: 90%;
   }
   .courses-cards__advanced{
-    width: 75%;
+    width: 90%;
   }
   .courses-cards__intensive-crypto{
-    width: 75%;
+    width: 90%;
+  }
+  .discount__bg-image-circle{
+    width: 65%;
   }
 }
   
@@ -993,11 +1019,25 @@ body {
     text-transform: uppercase;
     line-height: 2rem ;
   }
-  .cripto-cards{
-    
+  
+  .cripto-cards .cripto-cards-animate{
+    width: calc(20% * 16);
   }
-  .card{
-    width: 2%;
+  .cripto-cards .card{
+    width: 20%;
+  }
+  .cripto-cards .card img{
+    width: 100%;
+  }
+  @keyframes cripto {
+    0% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0);
+    }
+    100% {
+      -webkit-transform:translateX(calc(-20% * 8 ));
+      transform:translateX(calc(-20% * 8 ));
+    }
   }
 }
 
@@ -1293,6 +1333,7 @@ body {
   }
   .discount{
     min-height: 80vh;
+    margin-bottom: 8%;
   }
   .discount__bg-image-oval{
     width: 70%;
@@ -1306,8 +1347,28 @@ body {
     font-size: 2rem;
     line-height: 2.3rem;
   }
-  .card{
-    width: 1.2%;
+  .cripto-cards{
+    width: 75%;
+  }
+  .cripto-cards .cripto-cards-animate{
+    width: calc(20% * 19);
+  }
+  .cripto-cards .card{
+    width: 20%;
+  }
+  .cripto-cards .card img{
+    width: 100%;
+  }
+  @keyframes cripto {
+    0% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0);
+    }
+    100% {
+      -webkit-transform:translateX(calc(-20% * 9.5 ));
+      transform:translateX(calc(-20% * 9.5 ));
+    }
+  
   }
 }
 
@@ -1417,7 +1478,7 @@ body {
     margin-bottom: 1%;
   }
   .courses{
-    width: 85%;
+    width: 80%;
     min-height: 85vh;
   }
   .courses-cards{
@@ -1442,6 +1503,28 @@ body {
     font-size: 2.7rem;
     line-height: 2.7rem;
   }
-
+  .cripto-cards{
+    width: 65%;
+  }
+  .cripto-cards .cripto-cards-animate{
+    width: calc(15% * 19);
+  }
+  .cripto-cards .card{
+    width: 15%;
+  }
+  .cripto-cards .card img{
+    width: 100%;
+  }
+  @keyframes cripto{
+    0% {
+      -webkit-transform:translateX(0);
+      transform:translateX(0);
+    }
+    100% {
+      -webkit-transform:translateX(calc(-15% * 9.5 ));
+      transform:translateX(calc(-15% * 9.5 ));
+    }
+  
   }
 
+  }
