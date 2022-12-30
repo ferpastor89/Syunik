@@ -137,7 +137,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
     /**RESOURCES**/
 
     :root{
@@ -298,7 +297,7 @@ body {
   }
 
   .logo{
-    margin-left: .7rem;
+    margin-left: 5%;
     flex-basis: 6rem;
     
   }
@@ -611,11 +610,14 @@ body {
   .courses{
     border: 1px solid rgb(241, 238, 238);
     border-radius: 8rem;
-    background-color: rgb(243, 239, 239);
-    width: 95%;
+    background-image: url(./img/bgCursos.png);
+    background-size:auto;
+    background-position: center center;
+    width: 92%;
     margin: auto;
     max-width: 1100px;
   }
+  
   .courses-cards{
     display: flex;
     flex-direction: column;
@@ -623,10 +625,9 @@ body {
     align-items: center;
     gap: 2rem;
     margin: auto;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    width: 95%;
-    
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   .courses__title{
     display: flex;
@@ -634,11 +635,13 @@ body {
     align-items: center;
     margin-top: 10%;
     margin-bottom: 5%;
+
   }
   .courses__title-h2{
     font-family: "headingNowTitular";
     font-size: 2rem;
     text-transform: uppercase;
+    
   }
   .courses__title-h2 span{
     color: rgba(61, 43, 226, 0.644);
@@ -658,7 +661,7 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgb(255, 115, 0);
-    min-height: 65vh;
+    min-height: 60vh;
   }
 
   .courses-cards__advanced{
@@ -667,7 +670,7 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgb(61, 43, 226);
-    min-height: 65vh;
+    min-height: 60vh;
   }
   .courses-cards__advanced h3{
     border: 1px solid rgb(61, 43, 226);
@@ -681,13 +684,13 @@ body {
     justify-content: space-around;
     align-items: center;
     border:1px solid rgba(44, 226, 44, 0.829);
-    min-height: 65vh;
+    min-height: 60vh;
   }
   .courses-cards__intensive-crypto h3{
     border:1px solid rgba(44, 226, 44, 0.829);
   }
   .courses-cards__intensive-crypto button{
-    background-color: rgba(44, 226, 44, 0.829);
+    background-color: rgba(23, 182, 23, 0.829);
     margin-bottom: 10%;
   }
   .courses-cards img{
@@ -761,7 +764,8 @@ body {
     text-align: center;
   }
   .off{
-    font-weight: bold;
+    font-family: "MontserratBold";
+    font-weight: bolder;
   }
 
   /*** CRIPTO CARDS***/
@@ -796,14 +800,53 @@ body {
   }
 }
 
+  /***SOCIAL PROOF***/
+
+  .social-proof{
+    min-height: 50vh;
+  }
+  .social-proof__content{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "MontserratMedium";
+  }
+  .social-proof__content h3{
+    padding-top: 10%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: .7px;
+    padding-bottom: 5%;
+    color: antiquewhite;
+  }
+  .testimony{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+  }
+
+  .testimony img{
+    margin: auto;
+    width: 35%;
+    border-radius: 50%;
+    border: .5px solid pink;
+  }
+  .testimony p{
+    font-size: .8rem;
+    color: #393939;
+  }
+  .testimony span{
+    font-weight: bolder;
+  }
 
 
-
-
-.testimony img{
-  max-width: 25%;
-  width: 25%;
-}
 
 
 
@@ -969,7 +1012,8 @@ body {
     grid-template-columns:auto ;
     border: 1px solid gray;
     border-radius: 10rem;
-    width: 90%;
+    width: 95%;
+    max-height: 90vh;
     margin: auto;
     background-color: #f5f5fa;
     margin-bottom: 10%;
@@ -978,28 +1022,26 @@ body {
   .courses-cards{
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    margin-top: 10%;
-    margin-bottom: 5%;
     width: 100%;
-    gap: 1rem;
+    gap: .5rem;
   }
   .courses-cards__introduction{
     width: 90%;
     margin-left: 5%;
     justify-content: space-around;
-    min-height: 35vh ;
+    min-height: 40vh ;
   }
   .courses-cards__advanced{
     width: 90%;
     margin-right: 5%;
     justify-content: space-around;
-    min-height: 35vh ;
+    min-height: 40vh ;
   }
   .courses-cards__intensive-crypto{
     margin-left: 60%;
     width: 90%;
     justify-content: space-around;
-    min-height: 35vh ;
+    min-height: 40vh ;
   }
 
   .discount{
@@ -1039,6 +1081,27 @@ body {
       transform:translateX(calc(-20% * 8 ));
     }
   }
+
+  .social-proof{
+
+  }
+  .social-proof__content{
+
+  }
+  .social-proof__content h3{
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .testimony{
+  
+  }
+  .testimony img{
+    width: 25%;
+    margin-left: 20%;
+  }
+  .testimony p{
+    margin-right: 20%;
+  }
 }
 
 
@@ -1047,7 +1110,7 @@ body {
 
 /***MEDIA QUERY LANDSCAPE CEL***/
 
-@media screen and (min-width:601px) and (max-width:959px) and (orientation:landscape){
+@media screen and (min-width:601px) and (max-width:800px) and (orientation:landscape){
   .social-networks{
     grid-template-columns: 1fr 1.7fr;
   }
@@ -1139,6 +1202,8 @@ body {
     margin-top: 1.5%;
   }
   .logo{
+    margin-left: 0;
+    padding-left: 2%;
     flex-basis: 8rem;
   }
   .menu{
@@ -1252,7 +1317,6 @@ body {
     align-items: center;
     margin-top: 0;
     min-height: 50vh;
-    
   }
   .iphone14{
     width:100% ;
@@ -1294,13 +1358,13 @@ body {
     margin: auto;
   }
   .courses-cards__introduction{
-    max-height: 60vh;
+    min-height: 65vh;
   }
   .courses-cards__advanced{
-    max-height: 60vh;
+    min-height: 65vh;
   }
   .courses-cards__intensive-crypto{
-    max-height: 60vh;
+    min-height: 65vh;
   }
   .courses__title h2{
     font-size: 3.5rem;
@@ -1370,10 +1434,30 @@ body {
     }
   
   }
+  .social-proof{
+
+  }
+  .social-proof__content{
+    width: 65%;
+  }
+  .social-proof__content h3{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .testimony{
+  
+  }
+  .testimony img{
+    width: 25%;
+    margin-left: 20%;
+  }
+  .testimony p{
+    margin-right: 20%;
+  }
 }
 
 
-/**MEDIA QUERIES CUSTOM 1328px***/
+/**MEDIA QUERIES CUSTOM DESKTOP 1328px***/
 
 @media screen and (min-width:1100px){
 
@@ -1504,7 +1588,7 @@ body {
     line-height: 2.7rem;
   }
   .cripto-cards{
-    width: 65%;
+    width: 75%;
   }
   .cripto-cards .cripto-cards-animate{
     width: calc(15% * 19);
