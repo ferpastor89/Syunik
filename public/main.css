@@ -280,6 +280,7 @@ body {
       background-image: var(--gradiente-hero);
       background-size: 800%;
       animation: bg-animation 40s infinite alternate;
+      color:black;
     }
 
 
@@ -293,12 +294,13 @@ body {
     flex-wrap: wrap;
     max-width: 1100px;
     margin: auto;
-    margin-top:3%;
+    margin-top:7%;
+    margin-bottom: 5%;
   }
 
   .logo{
-    margin-left: 5%;
-    flex-basis: 6rem;
+    margin-left: 2%;
+    flex-basis: 7.5rem;
     
   }
 
@@ -331,7 +333,6 @@ body {
     font-family: "MontserratMedium";
     font-weight: bold;
     text-transform: uppercase;
-    color: #242323;
   }
 
   /*** HERO ***/
@@ -343,18 +344,21 @@ body {
     max-width: 1100px;
     margin: auto;
     margin-top: 5%;
+    min-height: 40vh;
   }
 
 
   .hero__title{
+    min-height: 30vh;
     margin:auto;
   }
   
   h1{
     width: 100%;
+    min-height: 30vh;
     font-family:"headingNowTitular";
     text-transform: uppercase;
-    font-size: 5em;
+    font-size:5.4em;
     line-height: 1em;
   }
 
@@ -363,26 +367,30 @@ body {
   .info-cards{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    margin-left: 1rem;
+    justify-content: space-around;
+    min-height: 10vh;
   }
   .hero__info-cards-forex{
-    width: 45%;
+    width: 46%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    padding: .8rem;
   }
   .hero__info-cards-señales{
-    width: 45%;
+    width: 46%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    padding: .8rem;
   }
 
   .info-cards p{
     font-family: "MontserratMedium";
-    font-size: .7rem;
-    line-height: .8rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 
   .info-cards span{
-    font-weight: bold;
+    font-weight: bolder;
   }
 
   /***REDES SOCIALES***/
@@ -390,13 +398,15 @@ body {
   .social-networks{
     display: grid;
     grid-template-columns: 1fr 2.8fr;
+    margin-top: 6%;
+    margin-bottom: 18%;
   }
 
   .follow-us{
     min-width: 4vw;
     display: block;
     margin-left: 1rem;
-    margin-top: .5rem;
+    margin-top: 20%;
   }
   .follow-us__title{
     font-size: .6rem;
@@ -406,6 +416,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: .5rem;
+    padding-top: 5%;
   }
   .fa-instagram{
     font-size: 1.8rem;
@@ -850,9 +861,9 @@ body {
 
 
 
-.logo img{
-  flex-basis: 6rem;
-}
+  .logo img{
+    flex-basis: 6rem;
+  }
 
 
 
@@ -873,6 +884,9 @@ body {
   .social-networks{
     display: grid;
     grid-template-columns: 1fr 2.5fr ;
+  }
+  .follow-us__icons{
+    padding-top: 15%;
   }
   .cel-frame{
     min-height: 60vh;
@@ -915,9 +929,9 @@ body {
     flex-basis: 8rem;
   }
   .menu{
-    max-width: 40%;
+    max-width: 50%;
     min-height: 4vh;
-    margin-right: 25%;
+    margin-right: 20%;
   }
   .menu__desktop{
     align-items:center;
@@ -927,25 +941,26 @@ body {
     font-size: .8rem;
   }
   .hero{
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
   }
   .hero__title h1{
-    font-size: 16.1vw;
-    margin-left: 3%;
-  }
-  .info-cards{
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-  }
-  .hero__info-cards-señales{
-    width: 20vw;
-    margin-right: 0;
+    font-size: 16vh;
     
   }
+  .info-cards{
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 10%;
+  }
+  .info-cards p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .hero__info-cards-señales{
+    min-height: 12vh;
+  }
   .hero__info-cards-forex{
-    width: 20vw;
-    margin-left:0 ;
+    min-height: 12vh;
   }
 
   .social-networks{
@@ -953,6 +968,21 @@ body {
   }
   .follow-us{
     margin-top: 2.5rem;
+  }
+  .follow-us__title{
+    font-size: .8rem;
+  }
+  .follow-us__icons{
+    gap: 1rem;
+  }
+  .follow-us__icons .fab{
+    font-size: 2.5rem;
+  }
+  .follow-us__icons .fa-brands{
+    font-size: 2.5rem;
+  }
+  .start-now__btn{
+    margin-top: 20%;
   }
   .join-us{
     margin-top: 3%;
@@ -1111,8 +1141,53 @@ body {
 /***MEDIA QUERY LANDSCAPE CEL***/
 
 @media screen and (min-width:601px) and (max-width:800px) and (orientation:landscape){
+
+  .header{
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+  .hero{
+    margin-top: 0;
+    grid-template-columns: 2fr 1fr;
+    max-height: 100vh;
+  }
+  .hero__title{
+    width: 100%;
+    padding-left: 3%;
+  }
+  .hero__title h1{
+    font-size: 6em;
+    margin-top: 0;
+  }
+  .info-cards{
+    min-height: 8vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    gap: 1rem;
+  }
+  .info-cards p{
+    font-size: .7rem;
+    padding-bottom: .7rem;
+  }
+  .hero__info-cards-forex{
+    width: 85%;
+    max-height: 36%;
+  }
+  .hero__info-cards-señales{
+    width: 85%;
+    max-height: 36%;
+  }
   .social-networks{
     grid-template-columns: 1fr 1.7fr;
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+  .follow-us{
+    margin-top: 0;
+  }
+  .start-now__btn{
+    margin-top: 8%;
   }
   .join-us{
     height: 28vh;
@@ -1199,7 +1274,8 @@ body {
 @media screen and (min-width:960px){
 
   .header{
-    margin-top: 1.5%;
+    margin-top: 2.5%;
+    margin-bottom: 0;
   }
   .logo{
     margin-left: 0;
@@ -1220,17 +1296,18 @@ body {
   }
   .hero{
     grid-template-columns:2fr 1fr;
-    margin-top: 3%;
+    margin-top: 6%;
+    margin-bottom: 5%;
     margin-left:2% ;
   }
 
   .hero__title h1{
-    font-size: 15vw;
+    font-size: 15.2vw;
   }
   
   .info-cards{
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
   }
 
@@ -1253,19 +1330,24 @@ body {
 
   .hero__info-cards-señales{
     width: 20vw;
-    margin-right: 0
+    margin-right: 0;
+    border-radius: 2rem;
+    border-radius: 1.5rem;
   }
 
   .hero__info-cards-forex{
     width: 20vw;
     margin-left:0 ;
+    border-radius: 1.5rem;
   }
   .social-networks{
     grid-template-columns:1fr 1.4fr;
+    margin-top: 0;
+    margin-bottom: 12%;
   }
 
   .follow-us{
-    margin-top: 2.5rem;
+    margin-top: 5%;
   }
   .start-now__btn:hover{
     transform: scale(1.06);
@@ -1462,17 +1544,19 @@ body {
 @media screen and (min-width:1100px){
 
   .header{
-    margin-top: 2%;
+    margin-top: 4%;
   }
   .menu{
     margin-right: 30%;
   }
   .logo{
-    margin-left: 2%;
+    margin-left: 0;
+    padding-left: 2%;
   }
   .hero{
     grid-template-columns:2fr 1fr;
-    margin-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
     margin-left: 11% ;
   }
   .hero__title h1{
@@ -1489,11 +1573,15 @@ body {
     margin-left:0 ;
     padding: .5rem;
   }
+  .social-networks{
+    grid-template-columns:1fr 1.2fr;
+    margin-bottom: 5%;
+  }
   .follow-us{
     padding-left: 23%;
   }
-  .social-networks{
-    grid-template-columns:1fr 1.2fr;
+  .start-now__btn{
+    margin-top: 9%;
   }
 
   .join-us{
