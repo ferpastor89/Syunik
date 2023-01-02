@@ -182,6 +182,17 @@ body {
       );
     }
 
+    :root{
+      --gradiente-footer:linear-gradient(
+        80deg,
+        #5f3cfa,
+        #5f3cfa,
+        #5f3cfa,
+        #7252ff,
+        #896eff
+      );
+    }
+
 
     @font-face{
       font-family:"headingNowTitular";
@@ -595,8 +606,8 @@ body {
     margin-bottom: 5%;
   }
   .cel-frame__text-h3 span{
-    color: #363434;
-    font-weight: bold;
+    color:black;
+    font-weight: bolder;
   }
   .cel-frame__text-btn{
     background-color: rgb(236, 97, 46);
@@ -857,12 +868,51 @@ body {
     font-weight: bolder;
   }
 
+  /***FOOTER***/
 
+  .logo__img{
+    max-width: 6rem;
+  }
+  footer{
+    padding-top: 10%;
+  
+  }
+  .footer-content{
+    background-color: rgb(238, 229, 229);
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-top: 5%;
+  }
+  .footer-content__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    
+  }
+  .footer-content__nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-content__nav__ul--social-media{
+    padding-top: 6%;
+  }
+  .footer-content__nav__ul--contact-us li{
+    padding-top: 65%;
+  }
+  .copyright-footer{
+    background-color:rgb(238, 229, 229) ;
+    display: flex;
+    flex-direction: row;
 
-
-
-  .logo img{
-    flex-basis: 6rem;
+  }
+  .copyright-footer-items li{
+    display: inline-flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: .4rem;
   }
 
 
@@ -1278,9 +1328,56 @@ body {
   .social-networks{
     grid-template-columns: 1fr 1.5fr;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .start-now__btn{
     margin-top: 5rem;
+  }
+  .join-us{
+    min-height: 25vh;
+  }
+  .card-bar{
+    height: 7vh;
+  }
+  .contenedor-frame{
+    min-height: 90vh;
+  }
+  .cel-frame__title{
+    margin-bottom: 5%;
+  }
+  .cel-frame{
+    min-height: 50vh;
+  }
+  .iphone14{
+    min-height: 55vh;
+  }
+  .cel-frame__text{
+    margin-top: 18%;
+  }
+  .courses{
+    min-height: 200vh;
+  }
+  .courses-cards{
+    min-height: 150vh;
+    padding-top: 5%;
+    gap:.2rem;
+  }
+  .style-card{
+    min-height: 90vh;
+  }
+  .discount{
+    min-height: 100vh;
+  }
+  .discount__bg-image-oval{
+    max-width: 75vw;
+    min-height: 60vh;
+  }
+  .discount__bg-image-circle{
+    max-width: 33vw;
+    min-height:60vh;
+  }
+  .cripto-cards{
+    margin-top: 5%;
   }
 
   }
@@ -1742,3 +1839,109 @@ body {
   }
 
   }
+
+  /**MEDIA QUERIES CUSTOM DESKTOP 1440px X 900px***/
+
+@media screen and (min-width:1380px){
+  .hero{
+    grid-template-columns: 2.8fr 1fr;
+    min-height: 60vh;
+  }
+  .hero__title {
+    min-height: 40vh;
+  }
+  .hero__title h1{
+    font-size: 13.1vw;
+  }
+  .info-cards {
+    min-height: 30vh;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .hero__info-cards-forex{
+    width:10vw ;
+    min-height: 10vh;
+  }
+  .hero__info-cards-señales{
+    width:10vw ;
+    min-height: 5vh;
+  }
+  .social-networks{
+    margin-bottom: 10%;
+    grid-template-columns: 1fr 1.3fr;
+  }
+  .follow-us__title{
+    font-size: 1rem;
+  }
+  .fa-instagram{
+    font-size: 2.5rem;
+  }
+  .fa-facebook{
+    font-size: 2.5rem;
+  }
+  .start-now__btn{
+    font-size: 1.2em;
+    padding:1rem 2rem;
+  }
+  .cel-frame__title-h2{
+    font-size: 3.5rem;
+  }
+  .cel-frame__text{
+    justify-content: center;
+    min-height: 50vh;
+    margin-top: 0;
+  }
+  .cel-frame__text-h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-top: 30%;
+  }
+  .cel-frame__text-h3 span{
+    font-weight: bolder;
+  }
+
+  .courses__title h2{
+    font-size: 5.5rem;
+  }
+  .courses{
+    min-height: 70vh;
+    
+  }
+  .courses-cards{
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom:0 ;
+    max-height: 50%;
+  }
+  .courses-cards__introduction{
+    min-height: 50vh;
+  }
+  .courses-cards__advanced{
+    min-height: 50vh;
+  }
+  .courses-cards__intensive-crypto{
+    min-height: 50vh;
+  }
+  .discount{
+    width: 90vw;
+  }
+  .discount p{
+    font-size: 1rem;
+  }
+  .discount__bg-image-oval{
+    width: 60vw;
+    min-height: 45vh;
+  }
+  .discount__bg-image-circle{
+    min-height:45vh ;
+    width: 50%;
+  }
+  .discount h3{
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+
+}
