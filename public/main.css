@@ -1166,19 +1166,9 @@ body {
       transform:translateX(calc(-20% * 8 ));
     }
   }
-
-  .social-proof{
-
-  }
-  .social-proof__content{
-
-  }
   .social-proof__content h3{
     font-size: 1.7rem;
     line-height: 2rem;
-  }
-  .testimony{
-  
   }
   .testimony img{
     width: 25%;
@@ -1188,6 +1178,32 @@ body {
     margin-right: 20%;
   }
 
+  .footer-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-height: 18vh;
+    border-top-left-radius: 3rem;
+border-top-right-radius: 3rem;
+  }
+  .footer-content__nav{
+    min-width: 50vw;
+    justify-content:space-around;
+    gap: .5rem;
+  }
+  .footer-content__nav__ul--social-media{
+    padding-top: 6.5%;
+  }
+  .footer-content__nav__ul--contact-us li{
+    padding-top: 60%;
+  }
+  .copyright-footer{
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .copyright-footer-items li{
+    padding-left: 1.5rem;
+  }
   
 }
 
@@ -1663,18 +1679,12 @@ body {
     }
   
   }
-  .social-proof{
-
-  }
   .social-proof__content{
     width: 65%;
   }
   .social-proof__content h3{
     font-size: 2rem;
     line-height: 2rem;
-  }
-  .testimony{
-  
   }
   .testimony img{
     width: 25%;
@@ -1683,6 +1693,41 @@ body {
   .testimony p{
     margin-right: 20%;
   }
+  .footer-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+  }
+  .footer-content__nav__logo{
+    min-width:30vw ;
+    padding-top: 4%;
+  }
+  .footer-content__nav{
+    min-width: 45vw;
+    align-items: end;
+    line-height: 1.2rem;
+  }
+  .footer-content__nav li:hover{
+    transform: scale(1.06);
+  }
+
+  .footer-logo__img{
+    max-width: 8rem;
+  }
+  .copyright-footer-items li{
+    font-family: "MontserratMedium";
+    font-size:.5rem;
+    padding-left: 2rem;
+  }
+  .copyright-footer{
+    padding-bottom: 1%;
+  }
+  
+  
 }
 
 
@@ -1803,7 +1848,6 @@ body {
   .courses-cards{
     max-width: 1100px;
     min-height: 80%;
-    /*margin-bottom: 5%;*/
     gap: 2rem;
   }
   .courses-cards__introduction{
@@ -1845,6 +1889,7 @@ body {
     }
   
   }
+
 
   }
 
@@ -1952,4 +1997,73 @@ body {
     line-height: 3.2rem;
   }
 
+}
+
+/***MEDIA QUERIES 1920px X 1080px***/
+
+@media screen and (min-width:1900px) and (max-width:2300px){
+  .hero{
+    grid-template-columns: 3fr 1fr;
+    gap: 5rem;
+    /*max-width: 1100px;*/
+    margin: auto;
+    margin-top: 5%;
+    min-height: 45vh;
+  }
+  .hero__title h1{
+    font-size: 9vw;
+  }
+  .info-cards{
+    gap:0;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-networks{
+    width: 100vw;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+  .hero__info-cards-forex{
+    min-height: 10%;
+    margin-bottom:10% ;
+  }
+  .hero__info-cards-señales{
+    min-height: 10%;
+    margin-top: 10%;
+  }
+  .follow-us{
+    margin-left: 0;
+    padding-left: 2%;
+  }
+  .cripto-cards{
+    max-width: 1100px;
+  }
+  .social-proof__content h3{
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+  .testimony p{
+    font-size: 1.5rem;
+  }
+  .footer-content{
+    min-height: 18vh;
+    padding-bottom: 3%;
+    border-top-left-radius: 7rem;
+    border-top-right-radius:7rem ;
+  }
+  .social-proof__content{
+    width: 55%;
+  }
+  .footer-logo__img{
+    max-width: 13rem;
+  }
+  .footer-content__nav li{
+    font-size: 2em;
+    line-height: 2rem;
+  }
+  .copyright-footer-items li{
+    font-size: 1rem;
+  }
+  
 }
