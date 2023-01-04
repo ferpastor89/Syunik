@@ -1317,9 +1317,16 @@ border-top-right-radius: 3rem;
   }
   .copyright-footer{
     justify-content: space-evenly;
+    align-items: end;
+  }
+  footer{
+    padding-top: 3%;
+  }
+  .footer-content{
+    min-height: 35vh;
   }
   .footer-content__nav__ul--social-media{
-    padding-top: 3%;
+    padding-top: 6%;
   }
   .footer-content__nav__ul--contact-us li{
     padding-top: 63%;
