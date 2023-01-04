@@ -1457,6 +1457,9 @@ border-top-right-radius: 3rem;
     font-size: .8rem;
     cursor: pointer;
   }
+  .menu__desktop-items:hover{
+    transform: scale(1.06);
+  }
   .hero{
     grid-template-columns:2fr 1fr;
     margin-top: 6%;
