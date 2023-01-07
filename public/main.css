@@ -148,7 +148,7 @@ body {
         #ce41a3,
         #5d66e7,
         #dcddf7,
-        #a4a9f8,
+        #7980e4,
         #4751db,
         #ce41a3,
         orange
@@ -270,10 +270,15 @@ body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: var(--gradiente-hero);
+      -webkit-background-image: var(--gradiente-hero);
+      background-image: var(--gradiente-hero) ;
+      -webkit-background-size: 800%;
       background-size: 800%;
+      animation: bg-animation 40s infinite alternate ;
+      -moz-animation:bg-animation 40s infinite alternate ;
       -webkit-animation: bg-animation 40s infinite alternate ;
-      animation: bg-animation 40s infinite alternate;
+      -webkit-animation-name: bg-animation;
+      animation-name: bg-animation ;
       color:black;
     }
 
@@ -951,8 +956,11 @@ body {
   @media screen and (min-width:380px) and (max-width:480px){
   .hero{
     margin-top: 0;
+    margin-bottom: 10%;
   }
-  
+  .hero__title{
+    margin-bottom: 5%;
+  }
   .hero__title h1{
     font-size:6em;
     padding-top: 7%;
@@ -2117,7 +2125,11 @@ body {
     margin-top: 5%;
     min-height: 45vh;
   }
+  .logo{
+    margin-left: 2.2%;
+  }
   .hero__title h1{
+    padding-left:3% ;
     font-size: 9vw;
   }
   .info-cards{
@@ -2141,7 +2153,7 @@ body {
   }
   .follow-us{
     margin-left: 0;
-    padding-left: 2%;
+    padding-left: 0;
   }
   .cripto-cards{
     /*max-width: 1100px;*/
