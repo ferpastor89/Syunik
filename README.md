@@ -1,6 +1,6 @@
 # Syunik
 
-![Imagen del proyecto](https://github.com/ferpastor89/Syunik/tree/master/Syunik4.png?raw=true)
+![Imagen del proyecto](https://github.com/ferpastor89/Syunik/master/Syunik4.png?raw=true)
 
 ## Ejemplo en vivo
 - https://www.syunikinvestment.com/
