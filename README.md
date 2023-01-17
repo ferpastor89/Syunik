@@ -37,6 +37,12 @@ Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 
 ![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-5.png?raw=true)
 
+##### Mobile version
+
+![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/viewport-cel-1.png?raw=true)
+
+![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/viewport-cel-2.png?raw=true)
+
 
 ## Autor ✒️
 **FERNANDO PASTOR**
