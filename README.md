@@ -29,13 +29,13 @@ También seguí manejándome con una metodología de trabajo en la cuál iba mos
 Si querés conocer un poco el proyecto, acá te dejo unas snapshots del mismo:
 ##### Desktop version
 
-![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO2%20(2).png?raw=true)
+![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-2.png?raw=true)
 
 
-![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO3.png?raw=true)
+![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-3.png?raw=true)
 
 
-![Captura del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO4.png?raw=true)
+![Captura del proyecto](https://github.com/ferpastor89/Syunik/blob/master/Syunik-5.png?raw=true)
 
 
 ## Autor ✒️
