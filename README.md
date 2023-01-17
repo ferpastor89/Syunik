@@ -3,16 +3,21 @@
 ![Imagen del proyecto](https://github.com/ferpastor89/mirandanailsar.github.io/blob/main/IMAGEN-DEL-PROYECTO1.png?raw=true)
 
 ## Ejemplo en vivo
-- https://ferpastor89.github.io/mirandanailsar.github.io/
+- https://www.syunikinvestment.com/
 
 ## Descripción 📑
 
-Este es un proyecto que realicé para una clienta que necesitaba una landing page para su emprendimiento de belleza de uñas.
-Fue mi primer página, por lo tanto traté que sea simple pero a la vez eficiente, que cumpliera con el propósito de llevar más clientas al emprendimiento mediante una página en la cuál se muestran imágenes de sus trabajos, que fuese responsive, se detallen precios/servicios, y se hable un poco de ella y la forma en que lleva adelante éste proyecto.
+En éste trabajo me encargaron desarrollar un diseño de una landing page que el cliente ya tenía. Querían varias animaciones, una se trataba de un gradiente en el background del hero, otra en una barra que funciona como slider infinito con texto y otro slider infinito con imágenes casi al final.
+En principio me presentó un par de desafíos pero pude ir resolviéndolos de a uno a la vez.
+Realicé la maquetación y después me dediqué a darle estilos a la página. Utilicé Html y Css vanilla para todo el proyecto, ya que quería tener todo el control posible por lo customizado que era dicho proyecto.
+Al final realicé el despliegue en el servidor que el cliente ya tenía contratado.
+
 
 ## ¿Qué aprendí en éste proyecto? 🙇🏻 
 
-Este proyecto me enseñó que menos es más, sobretodo cuando estamos empezando. Que es muy importante mantener una buena comunicación con el cliente, clara y concisa y que tanto UX como UI son fundamentales a la hora de diseñar un proyecto desde cero.
+Con éste proyecto reforcé lo que pensaba anteriormente, la comunicación con el cliente es TODO.
+Una comunicación clara, concisa y tratando de comprender la necesidad del proyecto ante cualquier otra cosa. 
+También seguí manejándome con una metodología de trabajo en la cuál iba mostrando avances del proyecto dos veces por semana, para tener un feedback que me ayude a saber si el camino que iba tomando el desarrollar era el correcto.
 
 ## Tecnologías 🛠
 <!-- Iconos sacados de: https://github.com/hendrasob/badges/blob/master/README.md y https://github.com/alexandresanlim/Badges4-README.md-Profile -->
